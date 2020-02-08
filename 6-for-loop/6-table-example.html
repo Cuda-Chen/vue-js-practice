@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>table example</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <ul>
+                <li v-for="item in items">
+                    {{ item.message }}
+                </li>
+            </lu>
+        </div>
+
+        <script
+src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+        <script>
+            new Vue({
+                el:"#app",
+                data: {
+                    items: [
+                        { message: 'Apple' },
+                        { message: 'banana' },
+                        { message: 'Coconut' }
+                    ]
+                }
+            });
+        </script>
+    </body>
+</html>
